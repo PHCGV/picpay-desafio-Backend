@@ -21,11 +21,11 @@ public class Transaction {
     private  Long id;
     private BigDecimal amount;
     @ManyToOne
-    @JoinColumn(name="sender_id", nullable = false)
+    @JoinColumn(name="senderId", nullable = false)
 
     private User sender;
     @ManyToOne
-    @JoinColumn(name="receiver_id", nullable = false)
+    @JoinColumn(name="receiverId", nullable = false)
     private User receiver;
     private LocalDateTime timestamp;
 }
